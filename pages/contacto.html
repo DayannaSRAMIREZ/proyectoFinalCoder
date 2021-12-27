@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <nav>
+        <ul>  
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="./galeria.html">Galeria</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./comoComprar.html">Como comprar</a></li>
+        </ul>
+    </nav>
+    <main class="formulario">
+    <form action="documento.php" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" required placeholder="Ingrese Nombre" /><br />
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" required placeholder="Ingrese su apellido" /><br />
+            <label for="evento">Fecha de evento</label>
+            <input type="date" name="evento" required /><br />
+            <label for="tipoEvento">Tipo de evento</label><br />
+            <input type="radio" name="casamiento" value="casamiento" />
+            <label for="casamiento">Casamiento</label>
+            <input type="radio" name="cumpleaños" value="cumpleaños" />
+            <label for="cumpleaños">Cumpleaños</label>
+            <input type="radio" name="otro" value="otro" />
+            <label for="otro">Otro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Consulta</legend>
+            <label for="compras">Has comprado anteriormente</label>
+            <input type="checkbox" name="compras" value="1" /><br>
+            <textarea name="sugerencias" cols="30" rows="10" placeholder="Dejanos tu sugerencia!"></textarea><br />
+            <select name="opciones">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </fieldset>
+
+        <input class= "submit" type="submit" value="enviar" />
+        <input class= "reset" type="reset" value="borrar" />
+    </form>
+    </main>
+
+    <footer>
+        <div class="flex">
+          <div class="redes">
+            <p>Redes sociales</p>
+            <ul>
+              <li><a href="http://www.facebook.com"><img src="../img/facebook (1).png" alt="Facebook"> Facebook</a></li>
+              <li><a href="https://twitter.com"><img src="../img/signo-de-twitter.png" alt="Twittet"> Twitter</a></li>
+              <li><a href="http://www.instagram.com"><img src="../img/instagram.png" alt="instagram"> Instagram</a></li>
+            </ul>
+          </div>
+          <div class="contacto">
+            <p>Contacto</p>
+            <ul>
+              <li>Telefono: 15154521</li>
+              <li>Direccion: Las heras 28475</li>
+              <li>Correo electronico: marieantoniette@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="derechos">Marie Antoinette © | Derechos reservados</div>
+      </footer>
+</body>
+</html>
