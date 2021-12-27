@@ -11,6 +11,7 @@ body {
   font-family: "Gwendolyn", cursive;
   background-color: rgba(229, 194, 227, 0.329);
 }
+
 /* ------------index--------------- */
 .header_h1-titulo {
   font-family: "Gwendolyn", cursive;
@@ -20,25 +21,44 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-name: efectos2;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+
 }
+@keyframes efectos2 {
+0%{
+  color: transparent;
+}
+50%{
+  color: transparent 50%;
+}100%{
+  color: white;
+}
+  
+}
+
 
 .header_img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/macarons-gfc0a3c6af_1920.jpg);
 
-     
+
   background-size: cover;
   background-repeat: no-repeat;
   height: 450px;
   background-attachment: fixed;
   position: relative;
 }
+
 @media screen and (max-width: 768px) {
   .header_img {
     background-size: cover;
     background-attachment: initial;
     height: 200px;
   }
+
   .header_h1-titulo {
     font-size: 16px;
   }
@@ -55,9 +75,10 @@ footer {
   line-height: 30px;
   text-align: center;
 }
+
 .contacto {
- 
-  background-image: linear-gradient(to left, rgb(225, 187, 210) , rgb(182, 137, 177));
+
+  background-image: linear-gradient(to left, rgb(225, 187, 210), rgb(182, 137, 177));
   flex-basis: 50%;
   height: 150px;
   padding: 10px;
@@ -67,17 +88,20 @@ footer {
 .contacto ul li {
   list-style: none;
 }
+
 .redes {
 
-  background-image: linear-gradient(to left, rgb(225, 187, 210) , rgb(182, 137, 177));
+  background-image: linear-gradient(to left, rgb(225, 187, 210), rgb(182, 137, 177));
   flex-basis: 50%;
   height: 150px;
   padding: 10px;
   /* flex-grow: 1; */
 }
+
 .redes ul li {
   list-style: none;
 }
+
 .redes ul li a {
   text-decoration: none;
   color: #000;
@@ -86,9 +110,10 @@ footer {
 .derechos {
 
   text-align: center;
-  background-image: linear-gradient(to left, rgb(68, 38, 56) , rgb(46, 16, 43));
+  background-image: linear-gradient(to left, rgb(68, 38, 56), rgb(46, 16, 43));
   color: aliceblue;
 }
+
 @media screen and (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -104,21 +129,26 @@ nav ul {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+ 
 }
+
 
 @media screen and (max-width: 768px) {
   nav ul {
     grid-template-columns: repeat(1, 1fr);
   }
+
   nav ul li {
     border: solid black 1px;
   }
 }
+
 nav ul li {
   list-style-type: none;
   font-family: "Gwendolyn", cursive;
   font-size: 25px;
   text-align: center;
+  transition: all 5s;    
 }
 
 nav ul li a {
@@ -129,7 +159,8 @@ nav ul li a {
 
 nav ul li:hover {
   background-color: rgba(175, 124, 144, 0.945);
-  margin: 0%;
+  margin: 0%; 
+
 }
 
 #navHome {
@@ -147,39 +178,64 @@ nav ul li:hover {
   padding-top: 20px;
   font-size: 30px;
   display: flex;
+  animation-name: efectos;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
 
 }
-.articulo__p-fuente p{
+@keyframes efectos {
+0%{
+  color: aliceblue;
+}
+50%{
+  color: gray;
+}100%{
+  color: black;
+}
+  
+}
+
+.articulo__p-fuente p {
   flex-basis: 50%;
   padding: 30px;
 }
+
 .article_image {
-  background-image:url(../img/pexels-tijana-drndarski-3338677.jpg);
+  background-image: url(../img/pexels-tijana-drndarski-3338677.jpg);
   width: 100%;
   height: 400px;
   flex-basis: 50%;
   background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
+  background-position: center;
+  background-size: cover;
+
+
 }
+
 .article__iframe--centrar {
   text-align: center;
   margin: 20px;
   padding: 20px;
 }
+
 @media screen and (max-width: 768px) {
-  .articulo__p-fuente{
+  .articulo__p-fuente {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  
-   
+
+
   }
-  .article_image{
+
+  .article_image {
     background-size: contain;
+
+
   }
-  .articulo__p-fuente p{
+
+  .articulo__p-fuente p {
     flex-basis: 100%;
-     font-size: 20px;
+    font-size: 20px;
   }
 
 
@@ -190,14 +246,17 @@ nav ul li:hover {
   font-size: 30px;
   line-height: 1.5;
 }
+
 .submit {
   width: 90px;
   height: 40px;
 }
+
 .reset {
   width: 90px;
   height: 40px;
 }
+
 form {
   size: 10px;
   border: 5px solid rgb(184, 184, 202);
@@ -205,7 +264,7 @@ form {
   padding: 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/macaroon-g69d178c41_1920.jpg);
-     
+
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -225,12 +284,15 @@ form input {
 .mapa {
   text-align: center;
 }
+
 .comoComprar {
   text-align: justify;
   padding: 30px;
   list-style-image: url(../img/cake_sweet_dessert_icon_176829.png);
   font-size: 25px;
+
 }
+
 .comoComprar h1 {
   text-align: center;
 }
@@ -248,6 +310,7 @@ form input {
   padding: 10px;
   height: 100vh;
 }
+
 @media screen and (max-width: 768px) {
   .container {
     grid-template-areas:
@@ -263,6 +326,7 @@ form input {
     min-height: 100vh;
     grid-template-rows: none;
   }
+
   .item1,
   .item2,
   .item3,
@@ -274,15 +338,28 @@ form input {
     height: 400px;
   }
 }
+
 .item {
   border: solid black;
 }
+
+.item:hover {
+  /* height: 400px;
+
+  z-index: 1; */
+  transform: scale(2);
+  border: none;
+  background-size: cover;
+}
+
 .item1 {
   grid-area: item1;
   background-image: url(../img/torta4.jpg);
   background-size: cover;
   background-position: center;
+
 }
+
 .item2 {
   grid-area: item2;
   background-color: aqua;
@@ -290,6 +367,7 @@ form input {
   background-size: cover;
   background-position: center;
 }
+
 .item3 {
   grid-area: item3;
   background-color: aqua;
@@ -297,6 +375,7 @@ form input {
   background-size: cover;
   background-position: center;
 }
+
 .item4 {
   grid-area: item4;
   background-color: aqua;
@@ -304,6 +383,7 @@ form input {
   background-size: cover;
   background-position: center;
 }
+
 .item5 {
   grid-area: item5;
   background-color: aqua;
@@ -311,6 +391,7 @@ form input {
   background-size: cover;
   background-position: center;
 }
+
 .item6 {
   grid-area: item6;
   background-color: aqua;
@@ -318,6 +399,7 @@ form input {
   background-size: cover;
   background-position: center;
 }
+
 .item7 {
   grid-area: item7;
   background-color: aqua;
@@ -325,6 +407,7 @@ form input {
   background-size: cover;
   background-position: center;
 }
+
 .item8 {
   grid-area: item8;
   background-color: aqua;
