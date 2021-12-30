@@ -1,0 +1,40 @@
+/* -------------contacto--------------- */
+.formulario {
+    font-size: 30px;
+    line-height: 1.5;
+
+    
+  }
+  
+  .submit {
+    width: 90px;
+    height: 40px;
+  }
+  
+  .reset {
+    width: 90px;
+    height: 40px;
+  }
+  
+  form {
+    size: 10px;
+    border: 5px solid rgb(184, 184, 202);
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/macaroon-g69d178c41_1920.jpg);
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  form textarea {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+  }
+  
+  form input {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+  }

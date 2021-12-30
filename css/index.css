@@ -1,0 +1,51 @@
+/* ------------index--------------- */
+.header_h1-titulo {
+    font-family: "Gwendolyn", cursive;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: efectos2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
+  
+  }
+  @keyframes efectos2 {
+  0%{
+    color: transparent;
+  }
+  50%{
+    color: transparent 50%;
+  }100%{
+    color: white;
+  }
+    
+  }
+  
+  
+  .header_img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/macarons-gfc0a3c6af_1920.jpg);
+  
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header_img {
+      background-size: cover;
+      background-attachment: initial;
+      height: 200px;
+    }
+  
+    .header_h1-titulo {
+      font-size: 16px;
+    }
+  }
