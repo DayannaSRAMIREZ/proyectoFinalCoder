@@ -69,10 +69,9 @@ footer {
     flex-direction: column;
   }
 }
-
+/* ----nav----- */
 .navbar{
    background-color: rgb(68, 38, 56); 
-
+   height: 70px;
 }
-
 
