@@ -9,8 +9,23 @@
 .btn {
     background-color: rgb(220, 189, 211);
     border: 0; 
+    font-size: 30px;
 }
 .btn:hover{
 background-color: rgb(48, 2, 55);
 border: 0; 
+}
+.card-text{
+ font-size: 25px;
+}
+.card-title{
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    .card-img-top {
+
+      width: 100%;
+      height: 100vw;
+     
+    }
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dynalight&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -16,13 +16,14 @@ body {
 
 /*----------footer--------------------- */
 footer {
-  font-size: 20px;
+  font-size: 30px;
+  
 }
 
 .flex {
   display: flex;
   flex-direction: row;
-  line-height: 30px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -30,26 +31,32 @@ footer {
 
   background-image: linear-gradient(to left, rgb(225, 187, 210), rgb(182, 137, 177));
   flex-basis: 50%;
-  height: 150px;
+  height: 230px;
   padding: 10px;
   /* flex-grow: 1; */
 }
 
 .contacto ul li {
   list-style: none;
+  text-align: left;
+  line-height: 45px;
 }
 
 .redes {
 
-  background-image: linear-gradient(to left, rgb(225, 187, 210), rgb(182, 137, 177));
+  background-image: linear-gradient(to left,  rgb(182, 137, 177),rgb(225, 187, 210));
   flex-basis: 50%;
-  height: 150px;
+  height: 230px;
   padding: 10px;
+
   /* flex-grow: 1; */
 }
 
 .redes ul li {
   list-style: none;
+  line-height : 55px;
+  text-align: left;
+
 }
 
 .redes ul li a {
@@ -72,6 +79,6 @@ footer {
 /* ----nav----- */
 .navbar{
    background-color: rgb(68, 38, 56); 
-   height: 70px;
+font-size: 30px;
 }
 
