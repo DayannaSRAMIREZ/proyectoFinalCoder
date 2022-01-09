@@ -9,14 +9,14 @@
 .btn {
     background-color: rgb(220, 189, 211);
     border: 0; 
-    font-size: 30px;
+    font-size: 20px;
 }
 .btn:hover{
 background-color: rgb(48, 2, 55);
 border: 0; 
 }
 .card-text{
- font-size: 25px;
+ font-size: 20px;
 }
 .card-title{
     font-size: 30px;
