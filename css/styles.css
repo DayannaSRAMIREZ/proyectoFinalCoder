@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gwendolyn", cursive;
+  background-color: rgba(229, 194, 227, 0.329);
+}
+
+/* ----nav----- */
+.navbar {
+  background-color: #442638;
+  font-size: 20px;
+}
+
+/* ------------index--------------- */
+.header_h1-titulo {
+  font-family: "Gwendolyn", cursive;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: efectos2;
+  animation-name: efectos2;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+@-webkit-keyframes efectos2 {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: transparent 50%;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes efectos2 {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: transparent 50%;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.header_img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/macarons-gfc0a3c6af_1920.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/macarons-gfc0a3c6af_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .header_img {
+    background-size: cover;
+    background-attachment: initial;
+    height: 200px;
+  }
+  .header_h1-titulo {
+    font-size: 16px;
+  }
+}
+
+/*-----------productos-------------------*/
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-footer {
+  background-color: #501644;
+}
+
+.btn {
+  background-color: #dcbdd3;
+  border: 0;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #2e102b;
+  border: 0;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    width: 100%;
+    height: 100vw;
+  }
+}
+
+/*--------------nosotros-----------------*/
+.articulo__p-fuente {
+  font-family: "Dynalight", cursive;
+  text-align: justify;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: efectos;
+          animation-name: efectos;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes efectos {
+  0% {
+    color: aliceblue;
+  }
+  50% {
+    color: gray;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes efectos {
+  0% {
+    color: aliceblue;
+  }
+  50% {
+    color: gray;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.articulo__p-fuente p {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 30px;
+}
+
+.article_image {
+  background-image: url(../img/pexels-tijana-drndarski-3338677.jpg);
+  width: 100%;
+  height: 400px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.article__iframe--centrar {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .articulo__p-fuente {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .article_image {
+    background-size: contain;
+  }
+  .articulo__p-fuente p {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 20px;
+  }
+}
+
+/* ---------------galeria-------------- */
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "item1 item2 item3 item3" "item1 item4 item5 item6" "item7 item4 item8 item8";
+  -ms-grid-rows: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+  background-color: #b4acbb;
+  grid-gap: 10px;
+  padding: 10px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+        grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8";
+    height: auto;
+    min-height: 100vh;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8 {
+    height: 400px;
+  }
+}
+
+/* -------------contacto--------------- */
+.formulario {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.submit {
+  width: 90px;
+  height: 40px;
+}
+
+.reset {
+  width: 90px;
+  height: 40px;
+}
+
+form {
+  size: 10px;
+  border: 5px solid #b8b8ca;
+  text-align: center;
+  padding: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/macaroon-g69d178c41_1920.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/macaroon-g69d178c41_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+form textarea {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  display: inline-block;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+form input {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  display: inline-block;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+}
+
+/* --------------como comprar---------- */
+.mapa {
+  text-align: center;
+}
+
+.comoComprxr {
+  text-align: justify;
+  padding: 30px;
+  list-style-image: url(../img/cake_sweet_dessert_icon_176829.png);
+  font-size: 25px;
+}
+
+.comoComprxr h1 {
+  text-align: center;
+}
+
+.comoComprxr li {
+  margin: 50px;
+}
+
+/*----------footer--------------------- */
+footer {
+  font-size: 30px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 25px;
+  text-align: center;
+}
+
+.contacto {
+  background-image: -webkit-gradient(linear, right top, left top, from(#e1bbd2), to(#b689b1));
+  background-image: linear-gradient(to left, #e1bbd2, #b689b1);
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 230px;
+  padding: 10px;
+}
+
+.contacto ul li {
+  list-style: none;
+  text-align: left;
+  line-height: 45px;
+}
+
+.redes {
+  background-image: -webkit-gradient(linear, right top, left top, from(#b689b1), to(#e1bbd2));
+  background-image: linear-gradient(to left, #b689b1, #e1bbd2);
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 230px;
+  padding: 10px;
+}
+
+.redes ul li {
+  list-style: none;
+  line-height: 55px;
+  text-align: left;
+}
+
+.redes ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.derechos {
+  text-align: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(#442638), to(#2e102b));
+  background-image: linear-gradient(to left, #442638, #2e102b);
+  color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
